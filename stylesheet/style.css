@@ -10,6 +10,7 @@ html, body {
 
 body {
 	width: 100%;
+	height: 100%;
 	background: url("../images/background-tile.png") repeat;
 	font-size: 40px;
 	font-family: 'Gudea', sans-serif;
@@ -22,6 +23,9 @@ div {
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
+	background: url("../images/crowd.png") no-repeat center;
+	background-size: 100% auto;
+	min-width: 400px;
 }
 
 h1 {
@@ -33,6 +37,17 @@ h1 {
 h2 {
 	font-size: 1.5rem;
 	text-align: center;
+	margin-bottom: 16rem;
+}
+
+.team {
+	margin: 0 auto;
+	padding: 0;
+}
+
+img {
+	width: 80%;
+	margin-top: 1rem;
 }
 
 a {
@@ -41,37 +56,46 @@ a {
 }
 
 div > img {
-	width: 400px;
 	border-radius: 100px;
 	border: 3px solid #949599;
-	display: inline-block;
-	margin: 0 auto;
+	width: 40%;
+	float: left;
+	margin: 0 2%;
 }
 
 p {
 	font-size: 1rem;
-	width: 90%;
-	text-align: center;
-	margin: 1rem auto;
-	padding: .5rem 0;
+	display: inline-block;
+	text-align: left;
+	width: 40%;
+	float: right;
+	margin: 1rem 2%;
 }
 
 span {
 	font-style: italic;
 }
 
-button {
-	margin: 2.5rem auto;
-	height: 130px;
-	width: 224px;
-	background: url("../images/football.png");
-	font-family: 'freshman', serif;
-	font-size: 2rem;
-	border: none;
-}
 footer {
-	background: url("../images/crowd.png") no-repeat;
-	background-size: 100%;
-	height: 100%;
+	margin-top: 13rem;
+}
+
+button {
+	height: 165px;
+	width: 215px;
+	background: url("../images/football.png") no-repeat center;
+	background-size: contain;
+	font-family: 'freshman', serif;
+	font-size: 1.5rem;
+	border: none;
 	text-align: center;
+	margin: 0 auto;
+}
+
+div:after {
+ content: "."; 
+ visibility: hidden; 
+ display: block; 
+ height: 0; 
+ clear: both;
 }
