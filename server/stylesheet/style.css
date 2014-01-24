@@ -26,6 +26,7 @@ div {
 	background: url("../images/crowd.png") no-repeat center;
 	background-size: 100% auto;
 	min-width: 400px;
+	position: relative;
 }
 
 h1 {
@@ -43,6 +44,7 @@ h2 {
 .team {
 	margin: 0 auto;
 	padding: 0;
+	margin-bottom: 2rem;
 }
 
 img {
@@ -55,47 +57,44 @@ a {
 	display: inline-block;
 }
 
-div > img {
-	border-radius: 100px;
+table {
+	background: rgba(255,255,255,.8);
+	border-radius: 10px;
 	border: 3px solid #949599;
-	width: 40%;
-	float: left;
-	margin: 0 2%;
+	margin: 0 1rem;
+	padding: 0rem;
+}
+
+td > img {
+	border-radius: 10px;
+	border: 3px solid #949599;
 }
 
 p {
-	font-size: 1rem;
+	padding: 1rem;
+	font-size: 1.25rem;
 	display: inline-block;
-	text-align: left;
-	width: 40%;
-	float: right;
-	margin: 1rem 2%;
-}
-
-span {
-	font-style: italic;
+	text-align: center;
+	margin: 0 3%;
 }
 
 footer {
-	margin-top: 13rem;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	max-width: 700px;
 }
 
 button {
-	height: 165px;
+	height: 130px;
 	width: 215px;
 	background: url("../images/football.png") no-repeat center;
 	background-size: contain;
 	font-family: 'freshman', serif;
 	font-size: 1.5rem;
+	letter-spacing: .15rem;
 	border: none;
 	text-align: center;
 	margin: 0 auto;
-}
-
-div:after {
- content: "."; 
- visibility: hidden; 
- display: block; 
- height: 0; 
- clear: both;
+	color: #ffffff;
 }
